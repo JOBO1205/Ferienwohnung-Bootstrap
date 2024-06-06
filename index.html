@@ -3,11 +3,13 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <a href="kontakt.html">Kontaktformular</a> 
+  <a href="kontakt.html">Kontaktformular</a>
   <title>Home</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
@@ -15,7 +17,7 @@
     <a href="home.html">Home</a>
     <a href="kontakt.html">Kontakt</a>
     <a href="anfahrt.html">Anfahrt</a>
-    
+
 
   </nav>
 
@@ -41,20 +43,37 @@
   </ul>
 
   <h2>Ferienhaus</h2>
-  <div class="center">
-      <img id="Foto1"
-        src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/397538269.jpg?k=1ac72244fc860380683e85777504abe65b206a0fbf0826bd606eed38ea22c1c1&o=&hp=1"
-        alt="villa-carpe-diem" width="450" height="400" />
-  
-      <img id="Foto2" src="https://images.traum-ferienwohnungen.de/299265/9317358/46/kanada-blockhaus-gartenansicht.jpg"
-        width="450" height="400" />
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/397538269.jpg?k=1ac72244fc860380683e85777504abe65b206a0fbf0826bd606eed38ea22c1c1&o=&hp=1"
+          alt="villa-carpe-diem" width="450" height="400" />
+      </div>
 
-    <img id="Foto3"
-      src="https://rapunzelturm.de/media/com_solidres/assets/images/system/Ferienhaus_Schneewittchenhuette_Sachsen_Urlaub_Holzhaus.jpg"
-      width="450" height="400" />
+      <div class="carousel-item active">
+        <img id="Foto2"
+          src="https://images.traum-ferienwohnungen.de/299265/9317358/46/kanada-blockhaus-gartenansicht.jpg" width="450"
+          height="400" />
+      </div>
 
-  </div>
-
+      <div class="carousel-item active">
+        <img id="Foto3"
+          src="https://rapunzelturm.de/media/com_solidres/assets/images/system/Ferienhaus_Schneewittchenhuette_Sachsen_Urlaub_Holzhaus.jpg"
+          width="450" height="400" />
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>

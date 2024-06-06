@@ -1,6 +1,6 @@
 body {
-  background-color: #ebe4c2;
-}
+  background-color: #ebe4c2 !important;
+} 
 
 h1 {
   text-align: center;
@@ -55,3 +55,7 @@ h3{
 .navcenter {
   text-align: center;
 }
+
+.carousel {
+  text-align: center;
+ }
