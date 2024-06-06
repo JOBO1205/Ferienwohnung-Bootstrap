@@ -59,3 +59,7 @@ h3{
 .carousel {
   text-align: center;
  }
+
+ .navigation {
+  background-color:black !important; 
+ } 
