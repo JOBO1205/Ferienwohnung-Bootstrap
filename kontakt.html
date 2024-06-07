@@ -52,29 +52,43 @@
 
     <h2>Kontaktformular</h2>
 
-    <form action="/action_page.php">
-        <label for="fname">Vorname:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Nachnahme:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="lname">Straße:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="lname">Ort:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="lname">Buchungszeitraum:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="Haustier">Haustier:</label>
-        <select name="Haustier" id="Haustier">
-            <option value="Ja">Ja</option>
-            <option value="Nein">Nein</option>
-        </select><br><br>
-        <label for="">Datenschutzbestimmung gelesen</label>
-        <input type="checkbox" /><br /><br />
-        <input type="submit" value="Bestätigung">
-    </form>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Name, Vorname</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Addresse</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Straße,Hausnummer">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Stadt</label>
+              <input type="text" class="form-control" id="inputCity" placeholder="Postleitzahl, Stadt">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Haustier</label>
+              <select id="inputState" class="form-select">
+                <option selected>Auswählen</option>
+                <option>Ja</option>
+                <option>Nein</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Anmerkungen</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Datenschutzbestimmung gelesen
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Bestätigen</button>
+            </div>
+          </form>
 </body>
 
 </html>
