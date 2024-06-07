@@ -69,4 +69,9 @@ h3{
 
  .navbar {
   background-color:#ebe4c2 !important;
+  font-size: 20pt;
+  text-align: center;
+  border: 1px solid black;
+  margin: 0px 0px 3px 0px;
+  padding: 4px; 
  }
